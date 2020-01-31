@@ -21,7 +21,7 @@ for i in range(n):
 
     while(j < i):
         c *= (j-i)*(j+i+1)/((j+1)*(j+2))
-        Y = c*np.power(x, j+2)
+        Y += c*np.power(x, j+2)
         j += 2
     Y /= Y[-1]
     p.append(Y)
